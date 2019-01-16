@@ -13,7 +13,6 @@ public class DataService {
                     new Event("Event",
                             "4406 w 7th ave",
                             "this is a huge event"));
-
         }
         return eventData;
     }

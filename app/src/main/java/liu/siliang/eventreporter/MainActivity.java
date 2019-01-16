@@ -21,9 +21,17 @@ public class MainActivity extends AppCompatActivity {
 //                R.id.event_name,
 //                getEventNames()
 //        );
-        //assign adapter to listView
-       // eventListView.setAdapter(adapter);
+
+//        ArrayAdapter<Event> adapter = new ArrayAdapter<Event>(
+//                this,
+//                R.layout.event_item,
+//                R.id.event_title,
+//                DataService.getEventData());
+
+
         EventAdapter adapter = new EventAdapter(this);
+        //assign adapter to listView
+        eventListView.setAdapter(adapter);
     }
     //TODO1: get fake event names, return array of fake event names
 //    private String[] getEventNames(){
